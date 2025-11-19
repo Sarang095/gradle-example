@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout Code'){
             steps{
-            git 'https://github.com/andyjduncan/gradle-example.git'
+            checkout scm
             }
         }
         stage('Build') {
